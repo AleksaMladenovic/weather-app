@@ -11,11 +11,18 @@ function setRequestString(location) {
 
 async function getTheData(location) {
   setRequestString(location);
-  const response = await fetch(requestString, {
-    mode: "cors",
-  });
-  const data = response.json();
-  return data;
+  try {
+    const response = await fetch(requestString, {
+      mode: "cors",
+    });
+    if(!response.ok)
+        return "";
+    const data = response.json();
+    return data;
+  } catch (ex) {
+    console.log(ex);
+    return "";
+  }
 }
 
 export async function getStructuredData(location) {

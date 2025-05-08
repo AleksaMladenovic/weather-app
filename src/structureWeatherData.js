@@ -1,6 +1,8 @@
 import { getLocalTimeFromTZOffset } from "./localTime";
 
 export function createStructuredData(data) {
+if(data==="")
+    return "";
   const resolvedAddress = data.resolvedAddress;
   const days = [];
   //currently - trenutly
