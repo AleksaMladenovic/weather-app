@@ -4,8 +4,9 @@ export function createStructuredData(data) {
 if(data==="")
     return "";
   const resolvedAddress = data.resolvedAddress;
+  const currentConditions = getCurrentConditions(data);
   const days = [];
-  //currently - trenutly
+
   const currentDay = getStructuredCurrentDay(data);
   days.push(currentDay);
 
@@ -17,8 +18,22 @@ if(data==="")
 
   return {
     resolvedAddress,
+    currentConditions,
     days,
   };
+}
+
+function getCurrentConditions(data){
+  const conditions = data.currentConditions.conditions;
+  const temp = data.currentConditions.temp;
+  const precippercent = data.currentConditions.precipprob;
+  const feelslike = data.currentConditions.feelslike;
+  const uvindex = data.currentConditions.uvindex;
+
+  const currentConditions = {
+    conditions, temp,precippercent,feelslike,uvindex
+  }
+  return currentConditions;
 }
 
 function getStructuredCurrentDay(data) {
