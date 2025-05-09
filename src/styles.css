@@ -148,8 +148,6 @@ input {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  img {
-  }
 }
 .condition {
   font-size: 38px;
@@ -282,6 +280,9 @@ h3 {
     }
     p.time {
       margin-bottom: -3px;
+    }
+    .wrapperPrecippercent{
+      height: 23px;
     }
   }
 }
