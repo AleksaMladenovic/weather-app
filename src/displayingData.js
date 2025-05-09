@@ -13,7 +13,13 @@ export function displayData(data) {
   displayDays(data.days);
 }
 
+export function displayNoDataMessage(){
+    document.querySelector("p.noData").style.display = "block";
+}
 
+export function hideNoDataMessage(){
+    document.querySelector("p.noData").style.display = "none";
+}
 function displayDayConditions(day) {
   document.querySelector("p.condition").textContent = day.conditions;
   displayIcon(document.querySelector("div.icon>img"),day.icon)

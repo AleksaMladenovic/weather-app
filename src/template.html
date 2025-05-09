@@ -6,14 +6,18 @@
     <title>Weather app</title>
   </head>
   <body>
-    <div class="container">
+    <div class="animationDiv"></div>
+    <div class="inputWrapper">
       <input type="text" id="location" name="location" />
+      <p class="noData">No data available for the selected location.</p>
+    </div>
+    <div class="container">
       <p class="locationName">Beograd, Cenralna Srbija</p>
       <div class="wrapperCondition">
-          <p class="condition">Partially cloudy</p>
-          <div class="icon">
-            <img src="icons/clear-day.svg" alt="#" />
-          </div>
+        <p class="condition">Partially cloudy</p>
+        <div class="icon">
+          <img src="icons/clear-day.svg" alt="#" />
+        </div>
       </div>
       <!-- Trenutno -->
       <div class="currentParametars">
@@ -40,7 +44,7 @@
 
       <h3>Hourly forecast</h3>
       <div class="hourly"></div>
-      
+
       <h3>10-day forecast</h3>
       <div class="daily"></div>
 

@@ -51,41 +51,104 @@ h6 {
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.animationDiv {
+  --color: rgba(0, 0, 225, 0.589);
+  position: absolute;
+  top: 100px;
+  height: 550px;
+  width: 550px;
+  border-radius: 800px;
+  background-color: var(--color);
+  box-shadow: rgba(0, 123, 255, 0.3) 0px 0px 30px 90px;
+  margin-top: 60px;
+  z-index: -1;
+  background: radial-gradient(
+    circle,
+    rgba(0, 123, 255, 1) 0%,
+    rgba(0, 123, 255, 0) 100%
+  );
+  transition: all 3s;
+}
+
+.animationDiv.bigger {
+  height: 650px;
+  width: 650px;
+  box-shadow: rgba(0, 123, 255, 0.3) 0px 0px 30px 140px;
+  transition: all 3s;
+}
+
+.animationDiv.focus {
+  box-shadow: none;
+  transition: all 3s;
+  height: 650px;
+  width: 650px;
+  top: 50px;
+}
+
+.noData{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 0px 3px;
+  position: absolute;
+  top: 33px;
+  left: 20px;
+  display: none;
+}
+
+.container.unfocus {
+  --blurValue: 10px;
+  -webkit-filter: blur(var(--blurValue));
+  -moz-filter: blur(var(--blurValue));
+  -o-filter: blur(var(--blurValue));
+  -ms-filter: blur(var(--blurValue));
+  filter: blur(var(--blurValue));
+  transition: 3s;
 }
 .container {
   min-width: 700px;
   width: 700px;
   padding-top: 10px;
   background-color: transparent;
+  transition: all 3s;
 }
 .flexCenter {
   display: flex;
   justify-content: center;
 }
+.inputWrapper {
+  margin-top: 10px;
+  min-width: 700px;
+  width: 700px;
+  position: relative;
+}
 input {
   border-radius: 20px;
   padding-left: 10px;
   margin-left: 20px;
+  justify-self: left;
 }
 
 .locationName {
   padding-left: 20px;
   font-size: 28px;
 }
-.wrapperCondition{
+.wrapperCondition {
   display: flex;
   gap: 10px;
 }
 
-.icon{
+.icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  img{
-
+  img {
   }
 }
 .condition {
@@ -137,7 +200,7 @@ input {
     width: var(--dimension);
     height: var(--dimension);
     p {
-      color:white;
+      color: white;
       font-size: calc(var(--dimension) / 2.7);
     }
   }
@@ -201,7 +264,7 @@ h3 {
       justify-content: end;
       height: 150px;
       width: 40px;
-      background-color: rgb(153, 153, 153);
+      background-color: rgb(22, 74, 185);
     }
     .coloredTemp {
       height: 30%;
@@ -216,7 +279,6 @@ h3 {
       display: flex;
       align-content: center;
       justify-content: center;
-
     }
     p.time {
       margin-bottom: -3px;
