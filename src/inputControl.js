@@ -1,3 +1,4 @@
+import { displayData } from "./displayingData";
 import { getStructuredData } from "./weatherAPI";
 
 const input = document.querySelector("input");
@@ -8,6 +9,7 @@ input.addEventListener("keyup", (event)=>{
         getStructuredData(location)
         .then((structuredData)=>{
             console.log(structuredData);
+            displayData(structuredData);
         })
     }
 })

@@ -57,8 +57,8 @@ body {
 .container {
   min-width: 700px;
   width: 700px;
-  border: 1px solid black;
   padding-top: 10px;
+  background-color: transparent;
 }
 .flexCenter {
   display: flex;
@@ -73,6 +73,20 @@ input {
 .locationName {
   padding-left: 20px;
   font-size: 28px;
+}
+.wrapperCondition{
+  display: flex;
+  gap: 10px;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  img{
+
+  }
 }
 .condition {
   font-size: 38px;
@@ -198,10 +212,11 @@ h3 {
       margin-top: 5px;
     }
     .icon {
-      margin-top: 7px;
+      margin-top: 15px;
       display: flex;
       align-content: center;
       justify-content: center;
+
     }
     p.time {
       margin-bottom: -3px;

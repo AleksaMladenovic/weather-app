@@ -9,368 +9,74 @@
     <div class="container">
       <input type="text" id="location" name="location" />
       <p class="locationName">Beograd, Cenralna Srbija</p>
-      <p class="condition">Partially cloudy</p>
+      <div class="wrapperCondition">
+          <p class="condition">Partially cloudy</p>
+          <div class="icon">
+            <img src="icons/clear-day.svg" alt="#" />
+          </div>
+      </div>
       <!-- Trenutno -->
       <div class="currentParametars">
         <div class="temperatureSegment segment">
-          <span class="currentTemp">13</span>
+          <span class="currentTemp"></span>
           <span class="deegreSymbol">°</span>
         </div>
         <div class="rainSegment segment">
           <p class="small">rain</p>
-          <p class="precippercent bigger">10%</p>
+          <p class="precippercent bigger"></p>
         </div>
         <div class="uvindexSegment segment">
           <p class="small">uv index</p>
           <div class="uvindexPhoto">
             <img src="uv-index/uv-index-empty.svg" />
-            <p class="uvindex">2</p>
+            <p class="uvindex"></p>
           </div>
         </div>
         <div class="feelslikeSegment segment">
           <p class="small">feels like</p>
-          <p class="feelslike bigger">18°</p>
+          <p class="feelslike bigger"></p>
         </div>
       </div>
-      <!-- Satovno -->
+
       <h3>Hourly forecast</h3>
-      <div class="hourly">
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-
-        <div class="hourSegment">
-          <p class="time">0:00</p>
-          <div class="wrapper">
-            <div class="coloredTemp"></div>
-          </div>
-          <p class="temp">-43°</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-low.svg" />
-            <p class="uvindex">2</p>
-          </div>
-          <div class="icon">
-            <img src="icons/clear-day.svg" />
-          </div>
-          <p class="precippercent">100%</p>
-        </div>
-      </div>
-      <!-- Dnevno -->
+      <div class="hourly"></div>
+      
       <h3>10-day forecast</h3>
-      <div class="daily">
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day selected">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-        <div class="day">
-          <p class="maxtemp">20</p>
-          <p class="mintemp">13</p>
-          <div class="uvindexPhoto">
-            <img src="uv-index/uv-index-high.svg" />
-            <p class="uvindex">5</p>
-          </div>
-          <div class="icon">
-            <img
-              src="icons/rain-snow-showers-day.svg"
-              alt="rain-snow-snowers-day"
-            />
-          </div>
-          <p class="precipercent">100%</p>
-          <p class="dayOfWeek">Sat</p>
-          <p class="date">05/09</p>
-        </div>
-      </div>
-    </div>
+      <div class="daily"></div>
 
-    <template id="template-day">
-      <div class="day">
-        <p class="maxtemp"></p>
-        <p class="mintemp"></p>
-        <div class="uvindexPhoto">
-          <img src="#" alt="#" />
-          <p class="uvindex"></p>
+      <template id="template-day">
+        <div class="day">
+          <p class="maxtemp"></p>
+          <p class="mintemp"></p>
+          <div class="uvindexPhoto">
+            <img src="#" alt="#" />
+            <p class="uvindex"></p>
+          </div>
+          <div class="icon">
+            <img src="#" alt="#" />
+          </div>
+          <p class="precipercent"></p>
+          <p class="dayOfWeek"></p>
+          <p class="date"></p>
         </div>
-        <div class="icon">
-          <img src="#" alt="#" />
+      </template>
+      <template id="template-hour">
+        <div class="hourSegment">
+          <p class="time"></p>
+          <div class="wrapper">
+            <div class="coloredTemp"></div>
+          </div>
+          <p class="temp"></p>
+          <div class="uvindexPhoto">
+            <img />
+            <p class="uvindex"></p>
+          </div>
+          <div class="icon">
+            <img src="#" alt="" />
+          </div>
+          <p class="precippercent"></p>
         </div>
-        <p class="precipercent"></p>
-        <p class="dayOfWeek"></p>
-        <p class="date"></p>
-      </div>
-    </template>
-    <template id="template-hour">
-      <div class="hourSegment">
-        <p class="time"></p>
-        <div class="wrapper">
-          <div class="coloredTemp"></div>
-        </div>
-        <p class="temp"></p>
-        <div class="uvindexPhoto">
-          <img src="#" alt="" />
-          <p class="uvindex"></p>
-        </div>
-        <div class="icon">
-          <img src="#" alt="" />
-        </div>
-        <p class="precippercent"></p>
-      </div>
-    </template>
+      </template>
+    </div>
   </body>
 </html>
