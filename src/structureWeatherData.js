@@ -41,6 +41,8 @@ function getStructuredCurrentDay(data) {
   for (let i = findCurrentHourIndex; i <= 23; i++) {
     const hour = data.days[0].hours[i];
     const newHour = getStructuredHour(hour);
+    if(i===findCurrentHourIndex)
+    newHour.currentHour = true;
     currentDay.hours.push(newHour);
   }
 
@@ -92,6 +94,7 @@ function getStructuredHour(hour) {
     precippercent,
     temp,
     uvindex,
+    currentHour:false,
   };
   return newHour;
 }
