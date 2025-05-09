@@ -29,9 +29,10 @@ function getCurrentConditions(data){
   const precippercent = data.currentConditions.precipprob;
   const feelslike = data.currentConditions.feelslike;
   const uvindex = data.currentConditions.uvindex;
+  const icon = data.currentConditions.icon;
 
   const currentConditions = {
-    conditions, temp,precippercent,feelslike,uvindex
+    conditions, temp,precippercent,feelslike,uvindex,icon
   }
   return currentConditions;
 }
