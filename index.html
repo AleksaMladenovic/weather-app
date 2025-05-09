@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="animationDiv"></div>
+    <div class="inputWrapper">
+      <input type="text" id="location" name="location" />
+      <p class="noData">No data available for the selected location.</p>
+    </div>
+    <div class="container">
+      <p class="locationName">Beograd, Cenralna Srbija</p>
+      <div class="wrapperCondition">
+        <p class="condition">Partially cloudy</p>
+        <div class="icon">
+          <img src="41dfabd0c7568b07d400.svg" alt="#" />
+        </div>
+      </div>
+      <!-- Trenutno -->
+      <div class="currentParametars">
+        <div class="temperatureSegment segment">
+          <span class="currentTemp"></span>
+          <span class="deegreSymbol">°</span>
+        </div>
+        <div class="rainSegment segment">
+          <p class="small">rain</p>
+          <p class="precippercent bigger"></p>
+        </div>
+        <div class="uvindexSegment segment">
+          <p class="small">uv index</p>
+          <div class="uvindexPhoto">
+            <img src="bd10da6d57e57fe85b41.svg" />
+            <p class="uvindex"></p>
+          </div>
+        </div>
+        <div class="feelslikeSegment segment">
+          <p class="small">feels like</p>
+          <p class="feelslike bigger"></p>
+        </div>
+      </div>
+
+      <h3>Hourly forecast</h3>
+      <div class="hourly"></div>
+
+      <h3>10-day forecast</h3>
+      <div class="daily"></div>
+
+      <template id="template-day">
+        <div class="day">
+          <p class="maxtemp"></p>
+          <p class="mintemp"></p>
+          <div class="uvindexPhoto">
+            <img src="#" alt="#" />
+            <p class="uvindex"></p>
+          </div>
+          <div class="icon">
+            <img src="#" alt="#" />
+          </div>
+          <p class="precipercent"></p>
+          <p class="dayOfWeek"></p>
+          <p class="date"></p>
+        </div>
+      </template>
+      <template id="template-hour">
+        <div class="hourSegment">
+          <p class="time"></p>
+          <div class="wrapper">
+            <div class="coloredTemp"></div>
+          </div>
+          <p class="temp"></p>
+          <div class="uvindexPhoto">
+            <img />
+            <p class="uvindex"></p>
+          </div>
+          <div class="icon">
+            <img src="#" alt="" />
+          </div>
+          <div class="wrapperPrecippercent">
+            <p class="precippercent"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+  </body>
+</html>
