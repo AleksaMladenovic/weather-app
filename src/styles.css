@@ -199,6 +199,9 @@ h3 {
     }
     .icon {
       margin-top: 7px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
     }
     p.time {
       margin-bottom: -3px;
